@@ -1,17 +1,14 @@
 #include <stdlib.h>
-
 #include <time.h>
 #include<stdio.h>
 /**
- *main -assigns a random number toint n everytime
- *it executes, and prints it 
- *Return:0
+*main -assigns a random number toint n everytime
+*it executes, and prints it 
+*Return:0
 */
 
-int main(void)
-  
+int main(void)  
 {
-  
   int n;
   
 
