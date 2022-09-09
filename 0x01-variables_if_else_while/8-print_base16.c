@@ -18,6 +18,6 @@ for (low = 'a'; low <= 'f'; low++)
 {
 putchar(low);
 }
-putchar("\n");
+printf("\n");
 return (0);
 }
