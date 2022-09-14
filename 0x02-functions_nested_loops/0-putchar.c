@@ -1,6 +1,6 @@
 #include "main.h"
-/*
-*main -print ptchar
+/**
+*main - print ptchar
 *Return: always 0
 */
 int main(void)
