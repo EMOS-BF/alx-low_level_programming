@@ -2,7 +2,7 @@
 /**
 * jack_bauer - function that prints every minute of the day, 24 hour clock
 *
-*   * h = hour, m = minutes
+* h = hour, m = minutes
 *
 * / 10 allows second digit to rotate
 *
@@ -12,16 +12,21 @@
 */
 void jack_bauer(void)
 {
-int h, m;
-for (h = 0; h < 24; h++)
-{
-for (m = 0; m < 60; m++)
-{
-_putchar((h / 10) + '0');													_putchar((h % 10) + '0');
-_putchar(':');					
-_putchar((m / 10) + '0')								
-_putchar((m % 10) + '0');
+int hours = 0;
+int minutes = 0;
+int hours_remainder;
+int mins_remainder;
+while (hours <= 23){
+while (minutes <= 59){														mins_remainder = minutes % 10;
+hours_rmainder = hours % 10;													_putchar(hours / 10 + '0');
+_putchar(hours_remainder + '0');
+_putchar(':');
+_putchar(minutes / 10 + '0');
+_putchar(mins_remainder + '0');
+minutes++;
 _putchar('\n');
 }
+hours++;
+minutes = 0;
 }
 }
