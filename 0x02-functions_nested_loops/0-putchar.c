@@ -1,16 +1,15 @@
-#include "_putchar.h"                                                                                                           
-/**                                                                                                                             
-* main - Entry point
+#include "main.h"
+/**
+* print_alphabet - prints the english alphabet from a-z.
 *
-* Return: Always 0 (Success)
+* Return: Nothing.
 */
-int main(void)
-{	
-char *sh = "_putchar";
-while (*sh)
-{                                                                                                                               
-_putchar(*sh);
-sh++;
+void print_alphabet(void)
+{
+char c;
+for (c = 'a'; c <= 'z'; c++)
+{
+_putchar(c);
+}
 _putchar('\n');
-return (0);
-}          
+}
