@@ -19,6 +19,6 @@ for (a = 0 ; a<(len1/2) ; a++)
 tmp=s[a];
 s[a]=s[len2];
 s[len2]=tmp;
-len2 - = 1;
+len2  =len2 - 1;
 }
 }
