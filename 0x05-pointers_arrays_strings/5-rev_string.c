@@ -7,14 +7,14 @@
 */
 void rev_string(char *s)
 {
-int a, len1 , len2;
-char tmp;
+int a , len1 , len2;
+char tmp ;
 len1 = 0;
 len2 = 0;
 while (s[len1] != '\0')
 	len1++;
 len2 = len1 - 1;
-for (a = 0 ; a < (len1/2) ; a++)
+for (a = 0 ; a < (len1 / 2) ; a++)
 {
 tmp = s[a];
 s[a] = s[len2];
