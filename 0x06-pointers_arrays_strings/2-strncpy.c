@@ -14,9 +14,9 @@ for (index = 0; index < n && src[index] != '\0' ; index++)
 {
 dest[index] = src[index];
 }
-if( index  < n)
+for(; index  < n; index++)
 {
-dest[index + 1] = '\0';
+dest[index] = '\0';
 }
 return (dest);
 }
