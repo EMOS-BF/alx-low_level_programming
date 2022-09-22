@@ -8,6 +8,7 @@
 int _strcmp(char *s1, char *s2)
 {
 int count,val;
+count=0;
 while(s1[count]==s2[count]&& s1='\0')
 {
 count++
