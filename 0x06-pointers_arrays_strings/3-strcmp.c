@@ -7,10 +7,21 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-for ( ; (*s1 != '\0' && *s2 != '\0') && (*s1 == *s2); s1++, s2++);
-if (*s1 == *s2)
+while(*s1='\0'&& *s2='\0')
 {
-return (0);
+if(*s1 != *S2)
+{
+count =1;
 }
+s1++;
+s2++;
+}
+if(count ==0)
+{
+return 0;
+}
+else
+{
 return (*s1 - *s2);
+}
 }
