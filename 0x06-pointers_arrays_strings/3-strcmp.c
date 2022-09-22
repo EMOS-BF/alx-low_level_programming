@@ -7,22 +7,11 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-int count;
-while(*s1='\0'&& *s2='\0')
+int count,val;
+while(s1[count]==s2[count]&& s1='\0')
 {
-if(*s1 != *S2)
-{
-count =1;
+count++
 }
-s1++;
-s2++;
-}
-if(count ==0)
-{
-return 0;
-}
-else
-{
-return (*s1 - *s2);
-}
+val = s1[count] - s2[count];
+return val;
 }
