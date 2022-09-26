@@ -2,7 +2,8 @@
 /**
 *_memset fills memory with a constant byte.
 *@s address to memory
-*@b char
+*@b char to be use
+*@n number to be used
 */
 char *_memset(char *s, char b, unsigned int n)
 {
