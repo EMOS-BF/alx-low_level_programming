@@ -1,10 +1,15 @@
-#include "holberton.h"
+/*
+* File: 100-set_string.c
+* Auth: SOME
+*/
+#include "main.h"
 /**
-* set_string - function that  sets the value of a pointer to a char.
-*@s: first value -char
-*@to: second value -int
+* set_string - Sets the value of a pointer to a char.
+* @s: The pointer.
+* @to: The char.
 */
 void set_string(char **s, char *to)
 {
 *s = to;
 }
+
