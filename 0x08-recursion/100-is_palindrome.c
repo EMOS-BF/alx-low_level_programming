@@ -1,23 +1,60 @@
 #include "main.h"
-#include<stdio.h>
 /**
-* _print_rev_recursion - Write a function that prints a string in reverse.
-* @s: This is my entry
+* _lenght - checks the length of a string
+* @s: is the string
+* Return: return the leng of the string
 */
-char *_print_rev_recursion(char *s)
+int _lenght(char *s)
 {
-if (*s != '\0')
-{
-_print_rev_recursion(s + 1);
-return (*s);
+if (*s == '\0')
+	return (0);
+return (1 + _lenght(s + 1));
 }
-}
-
-int is_palindrome(char *s)
+/**
+* checkp - checks if the string is palindrome
+* @i: is the index
+* @lg: is the length of the string
+* @s: is the string
+* Return: 1 if is polindrome or 0 if not
+*/
+int checkp(int i, int lg, char *s)
 {
-if(_print_rev_recursion(s) == s)
+if (lg > 0)
+{
+if (s[i] == s[lg])
+{
+return (checkp(i + 1, lg - 1, s));
+}
+else if (s[i] != s[lg])
+{
+return (0);
+}
+else
 {
 return (1);
 }
-return 0;
+}
+return (1);
+}
+
+
+
+
+
+/**
+
+  * is_palindrome - Checks if a string is a palindrome
+
+  * @s: is the string
+
+  * Return: return 1 if the string is a palindrome or 0 otherwise
+
+**/
+
+int is_palindrome(char *s)
+
+{
+
+	return (checkp(0, _lenght(s) - 1, s));
+
 }
