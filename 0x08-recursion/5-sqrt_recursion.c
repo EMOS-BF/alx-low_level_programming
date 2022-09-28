@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * my_sqrt_recursion - This is my my_sqrt_recursion
- function about the square root
+*function about the square root
 * @a: The entry is equal to n, of the before function
 * @b: This is the sum
 * Return: This is the result
