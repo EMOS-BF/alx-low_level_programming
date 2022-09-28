@@ -12,7 +12,7 @@ if (*s == '\0')
 return (1 + _lenght(s + 1));
 }
 /**
-* checkp - checks if the string is palindrome
+* compare - checks if the strings are identical
 * @i: is the index
 * @lg1 and lg2: are the length of the strings
 * @s1 and s2: are the strings
