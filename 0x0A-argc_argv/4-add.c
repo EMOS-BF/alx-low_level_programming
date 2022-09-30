@@ -1,38 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include "main.h"
 /**
-* main - Program that takes in all integer arguments and returns the sum
-* @argc: Number of command line arguments
-* @argv: Array name
-* Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
+* main - program that adds positive numbers.
+* @argc: number of arguments
+* @argv: array with the arguments
+* Return: always 0
 */
 int main(int argc, char *argv[])
 {
-int i, j, length, sum;
-char *ptr;
-if (argc < 2)
-	printf("0\n");
-else
+int i, suma = 0, res = 0;
+char c[] = "Error", *find_letter;
+if (argc > 1)
 {
-sum = 0;
 for (i = 1; i < argc; i++)
 {
-ptr = argv[i];
-length = strlen(ptr);
-for (j = 0; j < length; j++)
+find_letter = argv[i];
+while (*find_letter != 0)
 {
-if (isdigit(*(ptr + j)) == 0)
+if (*find_letter < 47 || *find_letter > 57)
 {
-printf("Error\n");
+printf("%s\n", c);
 return (1);
 }
+find_letter++;
 }
-sum += atoi(argv[i]);
+res = atoi(argv[i]);
+suma += res;
 }
-printf("%d\n", sum);
+printf("%d\n", suma);
 }
+else
+printf("%d\n", 0);
 return (0);
 }
