@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-
 int word_count(char *str);
 char *first_word(char *str);
 /**
@@ -60,7 +59,7 @@ char **strtow(char *str)
 
 		return (strArr);
 
-		xif (str[wordCount] != ' ' && !letter)
+		if (str[wordCount] != ' ' && !letter)
 		{
 		       strArr[counter] = first_word(str + counter);
 			if (!strArr[counter])
