@@ -6,10 +6,9 @@
 * @age:  second member of the struct
 * @owner:  third member of the struct
 */
-
 struct dog
 {
-	char *name;
-	float age;
-	char *owner;
+char *name;
+float age;
+char *owner;
 };
