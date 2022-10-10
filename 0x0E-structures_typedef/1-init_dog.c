@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "dog.h"
 /**
 * struct dog - this descripction about which dog
 * @name: First member of the struct
