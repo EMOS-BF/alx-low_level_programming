@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 #include <stdio.h>
 /**
 * print_name - Function to call a function
