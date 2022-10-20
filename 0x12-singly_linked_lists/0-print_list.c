@@ -17,7 +17,7 @@ printf("[%d] (%s)\n",0,"nil");
 }
 else
 {
-printf("[%u]  %s\n",temp->len, temp->str);
+printf("[%u] %s\n",temp->len, temp->str);
 }
 temp= temp->next;
 count++;
