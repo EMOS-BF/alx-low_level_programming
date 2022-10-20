@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
-
 /**
 * print_list - print the elements of a linked list.
 * @head: liked list head.
 * Return: amount of nodes of the linked list.
 */
-
 size_t print_list(const list_t *head){
     size_t count = 0;
     const list_t *temp;
@@ -24,3 +22,4 @@ size_t print_list(const list_t *head){
         count++;
     }
     return (count);
+}
