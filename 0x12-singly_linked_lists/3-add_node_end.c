@@ -21,7 +21,7 @@ if (newnode == NULL)
 }
 newnode->str = strdup(str);
 newnode->len = _strlen(str);
-newnode->next= NULL;
+newnode->next = NULL;
 if (*head == NULL)
 {
 *head = newnode;
