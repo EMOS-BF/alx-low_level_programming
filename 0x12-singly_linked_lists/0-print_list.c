@@ -11,8 +11,10 @@ size_t print_list(const list_t *head)
 size_t count = 0;
 const list_t *temp;
 temp = head;
-while(temp != NULL){
-if(temp->str == NULL){
+while(temp != NULL)
+{
+if(temp->str == NULL)
+{
 printf("[%d] %s\n",0,"(nil)");
 }
 else
