@@ -8,12 +8,6 @@
 * @str: string to add.
 * Return: pointer of the new node added to linked list.
 */
-int _strlen(const char *s)
-{
-int idx = 0;
-for (; s[idx]; idx++);
-return (idx);
-}
 
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -21,9 +15,9 @@ list_t *newnode;
 list_t *temp;
 temp = *head;
 newnode = (list_t *)malloc(sizeof(list_t));
-if(newnode == NULL)
+if (newnode == NULL)
 {
-    return NULL;
+    return (NULL);
 }
 newnode->str = strdup(str);
 newnode->len = _strlen(str);
@@ -38,5 +32,18 @@ while (temp->next != NULL)
 temp = temp->next;
 }
 temp->next = newnode;
-return newnode;
+return (newnode);
+}
+/**
+* _strlen - Calculate lenght of a string.
+* @s: string.
+* Return: lenght of the string s.
+*/
+
+int _strlen(const char *s)
+{
+int idx = 0;
+for (; s[idx]; idx++)
+	;
+return (idx);
 }
