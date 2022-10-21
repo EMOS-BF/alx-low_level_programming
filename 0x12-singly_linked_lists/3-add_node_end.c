@@ -17,7 +17,7 @@ temp = *head;
 newnode = (list_t *)malloc(sizeof(list_t));
 if (newnode == NULL)
 {
-    return (NULL);
+return (NULL);
 }
 newnode->str = strdup(str);
 newnode->len = _strlen(str);
