@@ -8,6 +8,13 @@
 * @str: string to add.
 * Return: pointer of the new element added to linked list.
 */
+int _strlen(const char *s)
+{
+int idx = 0;
+for (; s[idx]; idx++);
+return (idx);
+}
+
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *newnode;
