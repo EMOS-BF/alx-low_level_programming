@@ -11,8 +11,9 @@ size_t list_len(const list_t *head)
 size_t count = 0;
 const list_t *temp;
 temp = head;
-while(temp != NULL){
-temp= temp->next;
+while (temp != NULL)
+{
+temp = temp->next;
 count++;
 }
 return (count);
