@@ -10,7 +10,9 @@
 */
 
 /*
-*_strlen: to find str len
+*_strlen-calculate string lenght
+*s:a string parameter of _strlen
+*return: the lenght of the string
 */
 
 int _strlen(const char *s)
