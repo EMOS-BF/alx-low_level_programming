@@ -15,3 +15,4 @@ free(head->str);
 free(head);
 head = head->next;
 }
+}
