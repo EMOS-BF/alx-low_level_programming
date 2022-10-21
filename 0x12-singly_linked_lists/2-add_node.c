@@ -8,6 +8,11 @@
 * @str: string to add.
 * Return: pointer of the new element added to linked list.
 */
+
+/*
+*_strlen: to find str len
+*/
+
 int _strlen(const char *s)
 {
 int idx = 0;
