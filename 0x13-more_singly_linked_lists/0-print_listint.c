@@ -19,3 +19,4 @@ temp = temp->next;
 count++;
 }
 return (count);
+}
