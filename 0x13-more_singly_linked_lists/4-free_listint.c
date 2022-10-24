@@ -12,6 +12,6 @@ while (temp2 != NULL)
 {
 temp1 = temp2->next;
 free(temp2);
-temp2 = temp1->next;
+temp2 = temp1;
 }
 }
