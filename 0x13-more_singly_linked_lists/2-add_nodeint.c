@@ -19,3 +19,4 @@ newnode->n = n;
 newnode->next = *head;
 *head = newnode;
 return (newnode);
+}
