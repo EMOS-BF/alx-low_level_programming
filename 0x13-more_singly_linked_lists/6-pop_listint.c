@@ -14,12 +14,9 @@ if (*head == NULL)
 {
 return (0);
 }
-else
-{
 *head = current->next;
 temp = current->n;
 free(current);
 current = NULL;
 return (temp);
-}
 }
