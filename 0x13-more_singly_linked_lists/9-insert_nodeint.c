@@ -21,12 +21,12 @@ if (ptr2 == NULL)
 {
 return (NULL);
 }
-while(idx != 1)
+while (idx != 1)
 {
 ptr1 = ptr1->next;
 idx--;
 }
 ptr2->next = ptr1->next;
 ptr1->next = ptr2;
-return(ptr1);
+return (ptr1);
 }
