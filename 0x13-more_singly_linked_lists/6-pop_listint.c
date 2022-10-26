@@ -11,7 +11,7 @@ listint_t *temp;
 int data;
 if (*head == NULL)
 	return (0);
-tp = *head;
+temp = *head;
 *head = temp->next;
 data = temp->n;
 free(temp);
