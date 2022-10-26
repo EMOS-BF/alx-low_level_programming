@@ -1,6 +1,6 @@
+#include <stdio.h>
 #include "lists.h"
 #include <stdlib.h>
-#include <stdio.h>
 /**
 * insert_nodeint_at_index - Insert a new node at a given positiion.
 * @head: First node address.
