@@ -1,26 +1,21 @@
-#include "main.h"
+#include <stdio.h>
 /**
- *print_triangle - print a triangule
- *@size: integer
+ *main - finds and prints the larges prime factor of the number
+ *@void: no arguments
+ *Return: zero
  */
-void print_triangle(int size)
+int main(void)
 {
-	int x;
-	int y;
+	long i, num = 612852475143;
 
-	if (size <= 0)
+	for (i = 2; i <= num; i++)
 	{
-		_putchar('\n');
-	}
-	for (x = 1; x <= size; x++)
-	{
-		for (y = 1; y <= size; y++)
+		if (num % i == 0)
 		{
-			if (y <= size - x)
-				_putchar (' ');
-			else
-				_putchar ('#');
+			num = num / i;
+			i--;
 		}
-		_putchar('\n');
 	}
+	printf("%lu\n", i);
+	return (0);
 }
