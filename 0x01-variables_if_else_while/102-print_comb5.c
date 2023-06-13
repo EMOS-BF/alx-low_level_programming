@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - entry block
  * @void: no argument
@@ -8,21 +10,25 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 0; i < 98; i++)
+	while (i <= 98)
 	{
-		for (j = i + 1; j < 99; j++)
+		j = i + 1;
+		while (j <= 99)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
 			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-			if (i != 98 || j != 99)
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+			if (count != 4949)
 			{
-			        putchar(',');
+				putchar(',');
 				putchar(' ');
 			}
+			j++;
+			count++;
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0)
