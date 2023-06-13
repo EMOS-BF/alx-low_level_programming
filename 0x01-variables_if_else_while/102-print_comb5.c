@@ -8,28 +8,27 @@
  **/
 int main(void)
 {
-	int i=0, j;
-	int count =0;
-	while (i <= 98)
+	int num1, num2;
+
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		j = i + 1;
-		while (j <= 99)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
 			putchar(' ');
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
-			if (count != 4949)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			j++;
-			count++;
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+
+			if (num1 == 98 && num2 == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
-		i++;
 	}
+
 	putchar('\n');
-	return (0)
+
+	return (0);
 }
