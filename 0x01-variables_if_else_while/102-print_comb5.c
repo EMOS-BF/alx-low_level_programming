@@ -8,8 +8,8 @@
  **/
 int main(void)
 {
-	int i, j;
-
+	int i=0, j;
+	int count =0;
 	while (i <= 98)
 	{
 		j = i + 1;
