@@ -6,11 +6,11 @@
 */
 int get_endianness(void)
 {
-	int num;
+	int num = 1;
+	char *endian = (char *)&num;
 
-	num = 1;
-	if (*(char *)&num == 1)
+	if (*endian == 1)
 		return (1);
-	else
-		return (0);
+
+	return (0);
 }
