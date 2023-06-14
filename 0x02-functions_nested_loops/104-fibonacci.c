@@ -16,7 +16,7 @@ int main(void)
 	c = 2;
 
 	printf("%.f, %.f", first, second);
-	while (c  <= 98)
+	while (c  < 98)
 	{
 		next = first + second;
 		first = second;
